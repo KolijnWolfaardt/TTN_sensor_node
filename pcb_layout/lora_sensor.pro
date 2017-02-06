@@ -1,4 +1,4 @@
-update=Sat 04 Feb 2017 17:11:23 SAST
+update=Sun 05 Feb 2017 18:51:41 SAST
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,10 +58,10 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=libraries/rn2483
-LibName31=libraries/pic18f2xj50
-LibName32=libraries/mcp73831
-LibName33=libraries/switchtactile
-LibName34=libraries/tps736
-LibName35=libraries/BH1603FVC
-LibName36=libraries/mcp9700t-e
+LibName30=libraries/pic18f2xj50
+LibName31=libraries/mcp73831
+LibName32=libraries/switchtactile
+LibName33=libraries/tps736
+LibName34=libraries/BH1603FVC
+LibName35=libraries/mcp9700t-e
+LibName36=libraries/rn2483

@@ -2,9 +2,10 @@
 
 This is a basic sensor board I'm designing to experiment with the LORAWAN protocol, and [The Things Network](https://www.thethingsnetwork.org/) infrastructure. It is by no means intended to be a good or complete example of all the capabilities of either.
 
-
 The board uses a Microchip RN2483 to perform the RF communication and a PIC18F46J50 for the other work. The sensors were chosen based on what was available, cheap, and easy to solder.
 
+## Power
+The board is powered by a single lipo battery, which isregulated down to 3.3v 
 
 ## Datasheets
 
@@ -16,3 +17,5 @@ The board uses a Microchip RN2483 to perform the RF communication and a PIC18F46
 * Thermistor [MCP9701/9701A](http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pdf)
 * P-channel Mosfet [NXP BSS84](http://www.nxp.com/documents/data_sheet/BSS84.pdf)
 * N-channel Mosfet [NXP 2N7002](https://www.nxp.com/documents/data_sheet/2N7002.pdf)
+
+Thanks to [https://github.com/jpmeijers/RN2483shield](https://github.com/jpmeijers/RN2483shield) for the RN2483 component and module.

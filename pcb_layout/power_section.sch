@@ -160,7 +160,7 @@ U 1 1 589A2E3B
 P 2700 2000
 F 0 "Battery_Input1" H 2700 2300 50  0000 C CNN
 F 1 "CONN_01X02" V 2800 2000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 2700 2000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2700 2000 50  0001 C CNN
 F 3 "" H 2700 2000 50  0000 C CNN
 	1    2700 2000
 	-1   0    0    -1  

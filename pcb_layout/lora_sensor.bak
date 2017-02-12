@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:lora_sensor-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -228,4 +227,7 @@ F 3 "" H 100 1600 50  0001 C CNN
 	1    1650 6650
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1450 6250
+NoConn ~ 1450 6450
+NoConn ~ 1450 6650
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Sun 05 Feb 2017 18:51:41 SAST
+update=Sun 12 Feb 2017 14:49:33 SAST
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,4 @@ LibName33=libraries/tps736
 LibName34=libraries/BH1603FVC
 LibName35=libraries/mcp9700t-e
 LibName36=libraries/rn2483
+LibName37=libraries/fa_238

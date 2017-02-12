@@ -35,8 +35,9 @@ LIBS:tps736
 LIBS:BH1603FVC
 LIBS:mcp9700t-e
 LIBS:rn2483
+LIBS:fa_238
 LIBS:lora_sensor-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -133,7 +134,7 @@ U 1 1 589A2E2B
 P 7200 3800
 F 0 "MCU_Current1" V 7400 3800 50  0000 C CNN
 F 1 "CONN_01X02" V 7300 3800 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7200 3800 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7200 3800 50  0001 C CNN
 F 3 "" H 7200 3800 50  0000 C CNN
 	1    7200 3800
 	0    -1   -1   0   
@@ -144,7 +145,7 @@ U 1 1 589A2E32
 P 7200 4650
 F 0 "RF_Current1" V 7400 4650 50  0000 C CNN
 F 1 "CONN_01X02" V 7300 4650 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 7200 4650 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7200 4650 50  0001 C CNN
 F 3 "" H 7200 4650 50  0000 C CNN
 	1    7200 4650
 	0    -1   1    0   
@@ -159,7 +160,7 @@ U 1 1 589A2E3B
 P 2700 2000
 F 0 "Battery_Input1" H 2700 2300 50  0000 C CNN
 F 1 "CONN_01X02" V 2800 2000 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm" H 2700 2000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 2700 2000 50  0001 C CNN
 F 3 "" H 2700 2000 50  0000 C CNN
 	1    2700 2000
 	-1   0    0    -1  
@@ -239,9 +240,11 @@ Battery_input
 Text Label 4700 4150 0    60   ~ 0
 VUSB
 $Comp
-L LED Power_LED1
+L LED-RESCUE-lora_sensor Power_LED1
 U 1 1 589A2E6D
 P 3550 3450
+AR Path="/589A2E6D" Ref="Power_LED1"  Part="1" 
+AR Path="/5899E1BE/589A2E6D" Ref="Power_LED1"  Part="1" 
 F 0 "Power_LED1" H 3550 3550 50  0000 C CNN
 F 1 "LED" H 3550 3350 50  0000 C CNN
 F 2 "LEDs:LED_0805" H 3550 3450 50  0001 C CNN
@@ -369,7 +372,7 @@ U 1 1 589A2EB7
 P 6150 1850
 F 0 "Battery_Current1" V 6300 1850 50  0000 C CNN
 F 1 "CONN_01X02" V 6250 1850 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x01_Pitch2.54mm" H 6150 1850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6150 1850 50  0001 C CNN
 F 3 "" H 6150 1850 50  0000 C CNN
 	1    6150 1850
 	0    -1   -1   0   
@@ -380,7 +383,7 @@ U 1 1 589A2EBE
 P 3550 4500
 F 0 "Charge_Current1" V 3750 4500 50  0000 C CNN
 F 1 "CONN_01X02" V 3650 4500 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x01_Pitch2.54mm" H 3550 4500 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3550 4500 50  0001 C CNN
 F 3 "" H 3550 4500 50  0000 C CNN
 	1    3550 4500
 	0    1    1    0   
@@ -607,7 +610,7 @@ Wire Wire Line
 Wire Wire Line
 	8950 3400 9450 3400
 Text HLabel 8950 3600 0    60   Input ~ 0
-Gnd
+GND
 Text HLabel 8950 3400 0    60   Input ~ 0
 RF_Power
 Text HLabel 8950 3300 0    60   Input ~ 0

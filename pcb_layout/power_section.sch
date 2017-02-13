@@ -581,7 +581,7 @@ Wire Wire Line
 Text Label 9000 3100 0    60   ~ 0
 V_Battery
 Wire Wire Line
-	8950 3100 9450 3100
+	8950 3100 10000 3100
 $Comp
 L GND #PWR020
 U 1 1 589A521E
@@ -596,19 +596,19 @@ $EndComp
 Text HLabel 8950 3100 0    60   Input ~ 0
 V_Battery
 Wire Wire Line
-	8950 3600 9050 3600
+	8950 3600 10500 3600
 Wire Wire Line
 	9050 3600 9050 3700
 Wire Wire Line
-	8950 3200 9550 3200
+	8950 3200 10100 3200
 Text Label 9000 3300 0    60   ~ 0
 MCU_POW
 Text Label 9000 3400 0    60   ~ 0
 RF_POW
 Wire Wire Line
-	8950 3300 9450 3300
+	8950 3300 10200 3300
 Wire Wire Line
-	8950 3400 9450 3400
+	8950 3400 10300 3400
 Text HLabel 8950 3600 0    60   Input ~ 0
 GND
 Text HLabel 8950 3400 0    60   Input ~ 0
@@ -635,5 +635,85 @@ V_USB
 Text Label 9000 3500 0    60   ~ 0
 VUSB
 Wire Wire Line
-	8950 3500 9450 3500
+	8950 3500 10400 3500
+$Comp
+L TEST_1P J4
+U 1 1 58A163E9
+P 10000 2400
+F 0 "J4" H 10058 2520 50  0000 L CNN
+F 1 "V_Battery" H 10058 2429 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 1850 950 50  0001 C CNN
+F 3 "" H 1850 950 50  0001 C CNN
+	1    10000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J5
+U 1 1 58A16A2F
+P 10100 2650
+F 0 "J5" H 10158 2770 50  0000 L CNN
+F 1 "3.3V" H 10158 2679 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 1950 1200 50  0001 C CNN
+F 3 "" H 1950 1200 50  0001 C CNN
+	1    10100 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P J6
+U 1 1 58A16A98
+P 10200 2850
+F 0 "J6" H 10258 2970 50  0000 L CNN
+F 1 "MCU_POWER" H 10258 2879 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 2050 1400 50  0001 C CNN
+F 3 "" H 2050 1400 50  0001 C CNN
+	1    10200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3200 10100 2650
+Connection ~ 9550 3200
+Wire Wire Line
+	10200 3300 10200 2850
+Wire Wire Line
+	10000 3100 10000 2400
+$Comp
+L TEST_1P J7
+U 1 1 58A16F1C
+P 10300 3050
+F 0 "J7" H 10358 3170 50  0000 L CNN
+F 1 "RF_POWER" H 10358 3079 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 2150 1600 50  0001 C CNN
+F 3 "" H 2150 1600 50  0001 C CNN
+	1    10300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3400 10300 3050
+$Comp
+L TEST_1P J8
+U 1 1 58A16FFC
+P 10400 3250
+F 0 "J8" H 10458 3370 50  0000 L CNN
+F 1 "V_USB" H 10458 3279 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 2250 1800 50  0001 C CNN
+F 3 "" H 2250 1800 50  0001 C CNN
+	1    10400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 3500 10400 3250
+$Comp
+L TEST_1P J9
+U 1 1 58A170DB
+P 10500 3450
+F 0 "J9" H 10558 3570 50  0000 L CNN
+F 1 "GND" H 10558 3479 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Square-TH_Big" H 2350 2000 50  0001 C CNN
+F 3 "" H 2350 2000 50  0001 C CNN
+	1    10500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3600 10500 3450
+Connection ~ 9050 3600
 $EndSCHEMATC

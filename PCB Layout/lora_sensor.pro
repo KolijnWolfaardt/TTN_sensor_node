@@ -1,4 +1,4 @@
-update=Sun 12 Feb 2017 14:49:33 SAST
+update=Sat 01 Jul 2017 11:38:46 SAST
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,3 +66,13 @@ LibName34=libraries/BH1603FVC
 LibName35=libraries/mcp9700t-e
 LibName36=libraries/rn2483
 LibName37=libraries/fa_238
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1

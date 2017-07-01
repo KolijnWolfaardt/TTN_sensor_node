@@ -2,7 +2,7 @@
 
 This is a basic sensor board I designed to experiment with the LORAWAN protocol, and [The Things Network](https://www.thethingsnetwork.org/) infrastructure. It is by no means intended to be a good or complete example of all the capabilities of either.
 
-![Board Top layout](images/board_top.png?raw=true | width=500)
+![Board Top layout](images/board_top.png?raw=true "Board Top layout")
 
 The board uses a Microchip RN2483 to perform the RF communication and a PIC18F46J50 for the other work. The sensors were chosen based on what was available, for experimentation. Other sensors can easily be used.
 
@@ -24,7 +24,7 @@ Thanks to [https://github.com/jpmeijers/RN2483shield](https://github.com/jpmeije
 ## Schematic and PCB layout
 The schematic and PCB layout were created using KiCad, and can be found in the **PCB Layout** folder. The gerber files and schematic PDF can also be found there.
 
-![Photo of soldered board](images/board_photo.jpg?raw=true | width=500)
+![Photo of soldered board](images/board_photo.jpg?raw=true "Photo of soldered board")
 
 ## Firmware
 

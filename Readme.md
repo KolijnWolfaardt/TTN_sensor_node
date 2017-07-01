@@ -2,7 +2,7 @@
 
 This is a basic sensor board I designed to experiment with the LORAWAN protocol, and [The Things Network](https://www.thethingsnetwork.org/) infrastructure. It is by no means intended to be a good or complete example of all the capabilities of either.
 
-![Board Top layout](images/board_top.png =300x300)
+![Board Top layout](images/board_top.png)
 
 The board uses a Microchip RN2483 to perform the RF communication and a PIC18F46J50 for the other work. The sensors were chosen based on what was available, for experimentation. Other sensors can easily be used.
 

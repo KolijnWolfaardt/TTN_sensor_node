@@ -708,7 +708,7 @@ U 1 1 58A170DB
 P 10500 3450
 F 0 "J9" H 10558 3570 50  0000 L CNN
 F 1 "GND" H 10558 3479 50  0000 L CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 2350 2000 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Square-TH_Big" H 2350 2000 50  0001 C CNN
 F 3 "" H 2350 2000 50  0001 C CNN
 	1    10500 3450
 	1    0    0    -1  

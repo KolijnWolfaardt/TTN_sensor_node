@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/lora_sensor.sch</source>
-    <date>Mon 06 Feb 2017 21:52:15 SAST</date>
-    <tool>Eeschema 4.0.5-e0-6337~49~ubuntu16.04.1</tool>
+    <date>Mon 13 Feb 2017 18:49:40 SAST</date>
+    <tool>Eeschema no-vcs-found-7592~57~ubuntu16.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -71,6 +71,27 @@
     </sheet>
   </design>
   <components>
+    <comp ref="J1">
+      <value>CONN_01X01</value>
+      <footprint>Mounting_Holes:MountingHole_3.2mm_M3_Pad</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>589F7D41</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>CONN_01X01</value>
+      <footprint>Mounting_Holes:MountingHole_3.2mm_M3_Pad</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>589F8006</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>CONN_01X01</value>
+      <footprint>Mounting_Holes:MountingHole_3.2mm_M3_Pad</footprint>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>589F80EC</tstamp>
+    </comp>
     <comp ref="C1">
       <value>100nF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
@@ -92,14 +113,14 @@
       <sheetpath names="/rf_section/" tstamps="/58974944/"/>
       <tstamp>589AABCA</tstamp>
     </comp>
-    <comp ref="RF_High1">
+    <comp ref="RF_HIGH_1">
       <value>CONN_01X02</value>
       <footprint>libraries:SMA_edge_connect</footprint>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/rf_section/" tstamps="/58974944/"/>
       <tstamp>589AABF6</tstamp>
     </comp>
-    <comp ref="RF_Low1">
+    <comp ref="RF_LOW_1">
       <value>CONN_01X02</value>
       <footprint>libraries:SMA_edge_connect</footprint>
       <libsource lib="conn" part="CONN_01X02"/>
@@ -109,14 +130,14 @@
     <comp ref="RF_LED_1">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <libsource lib="device" part="LED"/>
+      <libsource lib="lora_sensor-cache" part="LED-RESCUE-lora_sensor"/>
       <sheetpath names="/rf_section/" tstamps="/58974944/"/>
       <tstamp>589AAC25</tstamp>
     </comp>
     <comp ref="RF_LED_0">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <libsource lib="device" part="LED"/>
+      <libsource lib="lora_sensor-cache" part="LED-RESCUE-lora_sensor"/>
       <sheetpath names="/rf_section/" tstamps="/58974944/"/>
       <tstamp>589AAC2C</tstamp>
     </comp>
@@ -206,21 +227,21 @@
     </comp>
     <comp ref="MCU_Current1">
       <value>CONN_01X02</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm</footprint>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2E2B</tstamp>
     </comp>
     <comp ref="RF_Current1">
       <value>CONN_01X02</value>
-      <footprint>Socket_Strips:Socket_Strip_Angled_1x02_Pitch2.54mm</footprint>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2E32</tstamp>
     </comp>
     <comp ref="Battery_Input1">
       <value>CONN_01X02</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x02_Pitch2.54mm</footprint>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2E3B</tstamp>
@@ -249,7 +270,7 @@
     <comp ref="Power_LED1">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <libsource lib="device" part="LED"/>
+      <libsource lib="lora_sensor-cache" part="LED-RESCUE-lora_sensor"/>
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2E6D</tstamp>
     </comp>
@@ -283,21 +304,21 @@
     </comp>
     <comp ref="C4">
       <value>4.7uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_1206</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2EAA</tstamp>
     </comp>
     <comp ref="Battery_Current1">
       <value>CONN_01X02</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_2x01_Pitch2.54mm</footprint>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2EB7</tstamp>
     </comp>
     <comp ref="Charge_Current1">
       <value>CONN_01X02</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_2x01_Pitch2.54mm</footprint>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm</footprint>
       <libsource lib="conn" part="CONN_01X02"/>
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2EBE</tstamp>
@@ -310,8 +331,8 @@
       <tstamp>589A2EC5</tstamp>
     </comp>
     <comp ref="C5">
-      <value>4.7u</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_1206</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2ECC</tstamp>
@@ -330,6 +351,48 @@
       <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
       <tstamp>589A2F25</tstamp>
     </comp>
+    <comp ref="J4">
+      <value>V_Battery</value>
+      <footprint>Measurement_Points:Measurement_Point_Square-SMD-Pad_Small</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
+      <tstamp>58A163E9</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>3.3V</value>
+      <footprint>Measurement_Points:Measurement_Point_Square-SMD-Pad_Small</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
+      <tstamp>58A16A2F</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>MCU_POWER</value>
+      <footprint>Measurement_Points:Measurement_Point_Square-SMD-Pad_Small</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
+      <tstamp>58A16A98</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>RF_POWER</value>
+      <footprint>Measurement_Points:Measurement_Point_Square-SMD-Pad_Small</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
+      <tstamp>58A16F1C</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>V_USB</value>
+      <footprint>Measurement_Points:Measurement_Point_Square-SMD-Pad_Small</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
+      <tstamp>58A16FFC</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>GND</value>
+      <footprint>Measurement_Points:Measurement_Point_Square-TH_Big</footprint>
+      <libsource lib="conn" part="TEST_1P"/>
+      <sheetpath names="/power_section/" tstamps="/5899E1BE/"/>
+      <tstamp>58A170DB</tstamp>
+    </comp>
     <comp ref="U4">
       <value>PIC18F2XJ50</value>
       <footprint>Housings_SSOP:SSOP-28_5.3x10.2mm_Pitch0.65mm</footprint>
@@ -339,7 +402,7 @@
     </comp>
     <comp ref="PICKIT1">
       <value>CONN_01X06</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x06_Pitch2.54mm</footprint>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm</footprint>
       <libsource lib="conn" part="CONN_01X06"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BC9A6</tstamp>
@@ -347,7 +410,7 @@
     <comp ref="P1">
       <value>USB_A</value>
       <footprint>libraries:USB_Micro</footprint>
-      <libsource lib="conn" part="USB_A"/>
+      <libsource lib="lora_sensor-cache" part="USB_A-RESCUE-lora_sensor"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BC9B4</tstamp>
     </comp>
@@ -386,22 +449,15 @@
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BC9EF</tstamp>
     </comp>
-    <comp ref="Y1">
-      <value>16Mhz</value>
-      <footprint>Crystals:Crystal_SMD_EuroQuartz_MQ-4pin_7.0x5.0mm_HandSoldering</footprint>
-      <libsource lib="device" part="Crystal_GND23"/>
-      <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
-      <tstamp>589BCA0D</tstamp>
-    </comp>
     <comp ref="C11">
-      <value>10pF</value>
+      <value>22pF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BCA1A</tstamp>
     </comp>
     <comp ref="C10">
-      <value>10pF</value>
+      <value>22pF</value>
       <footprint>Capacitors_SMD:C_0805</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
@@ -409,14 +465,14 @@
     </comp>
     <comp ref="C13">
       <value>10uF</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
+      <footprint>Capacitors_SMD:C_1206</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BCA34</tstamp>
     </comp>
     <comp ref="UART2_CONN1">
       <value>CONN_01X03</value>
-      <footprint>Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm</footprint>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</footprint>
       <libsource lib="conn" part="CONN_01X03"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BCA3B</tstamp>
@@ -424,14 +480,14 @@
     <comp ref="LED3">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <libsource lib="device" part="LED"/>
+      <libsource lib="lora_sensor-cache" part="LED-RESCUE-lora_sensor"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BCA4A</tstamp>
     </comp>
     <comp ref="LED2">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <libsource lib="device" part="LED"/>
+      <libsource lib="lora_sensor-cache" part="LED-RESCUE-lora_sensor"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BCA51</tstamp>
     </comp>
@@ -459,14 +515,14 @@
     <comp ref="LED1">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <libsource lib="device" part="LED"/>
+      <libsource lib="lora_sensor-cache" part="LED-RESCUE-lora_sensor"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BCA6D</tstamp>
     </comp>
     <comp ref="LED0">
       <value>LED</value>
       <footprint>LEDs:LED_0805</footprint>
-      <libsource lib="device" part="LED"/>
+      <libsource lib="lora_sensor-cache" part="LED-RESCUE-lora_sensor"/>
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BCA74</tstamp>
     </comp>
@@ -512,6 +568,13 @@
       <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
       <tstamp>589BCAD1</tstamp>
     </comp>
+    <comp ref="Y1">
+      <value>FA_238</value>
+      <footprint>libraries:Crystal_FA-238</footprint>
+      <libsource lib="fa_238" part="FA_238"/>
+      <sheetpath names="/microcontroller/" tstamps="/5899E253/"/>
+      <tstamp>589F0EF6</tstamp>
+    </comp>
     <comp ref="R22">
       <value>10k</value>
       <footprint>Resistors_SMD:R_0805</footprint>
@@ -549,6 +612,7 @@
     </comp>
     <comp ref="U5">
       <value>BH1603FVC</value>
+      <footprint>libraries:BH1603FVC</footprint>
       <libsource lib="BH1603FVC" part="BH1603FVC"/>
       <sheetpath names="/sensor_section/" tstamps="/5899F695/"/>
       <tstamp>589BF11C</tstamp>
@@ -615,6 +679,22 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="conn" part="CONN_01X01">
+      <description>Connector, single row, 01x01</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X01</fp>
+        <fp>Pin_Header_Angled_1X01</fp>
+        <fp>Socket_Strip_Straight_1X01</fp>
+        <fp>Socket_Strip_Angled_1X01</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="conn" part="CONN_01X02">
       <description>Connector, single row, 01x02</description>
       <footprints>
@@ -671,22 +751,6 @@
         <pin num="6" name="P6" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="Crystal_GND23">
-      <description>Four pin crystal (GND on pins 2 and 3), e.g. in SMD package</description>
-      <footprints>
-        <fp>Crystal*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">Y</field>
-        <field name="Value">Crystal_GND23</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-        <pin num="4" name="4" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="device" part="D_Zener">
       <description>Zener Diode</description>
       <docs>https://en.wikipedia.org/wiki/Zener_diode</docs>
@@ -707,14 +771,25 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="LED">
-      <description>LED generic</description>
+    <libpart lib="fa_238" part="FA_238">
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">FA_238</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="input"/>
+        <pin num="4" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="lora_sensor-cache" part="LED-RESCUE-lora_sensor">
       <footprints>
         <fp>LED*</fp>
       </footprints>
       <fields>
         <field name="Reference">D</field>
-        <field name="Value">LED</field>
+        <field name="Value">LED-RESCUE-lora_sensor</field>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
@@ -902,6 +977,16 @@
         <pin num="2" name="~" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="conn" part="TEST_1P">
+      <description>point</description>
+      <fields>
+        <field name="Reference">W</field>
+        <field name="Value">TEST_1P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="tps736" part="TPS736">
       <fields>
         <field name="Reference">U</field>
@@ -915,14 +1000,13 @@
         <pin num="5" name="OUT" type="input"/>
       </pins>
     </libpart>
-    <libpart lib="conn" part="USB_A">
-      <description>USB Type A connector</description>
+    <libpart lib="lora_sensor-cache" part="USB_A-RESCUE-lora_sensor">
       <footprints>
         <fp>USB*</fp>
       </footprints>
       <fields>
         <field name="Reference">P</field>
-        <field name="Value">USB_A</field>
+        <field name="Value">USB_A-RESCUE-lora_sensor</field>
       </fields>
       <pins>
         <pin num="1" name="VBUS" type="power_in"/>
@@ -940,8 +1024,8 @@
     <library logical="conn">
       <uri>/usr/share/kicad/library/conn.lib</uri>
     </library>
-    <library logical="switchtactile">
-      <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/switchtactile.lib</uri>
+    <library logical="tps736">
+      <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/tps736.lib</uri>
     </library>
     <library logical="pic18f2xj50">
       <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/pic18f2xj50.lib</uri>
@@ -949,425 +1033,444 @@
     <library logical="mcp73831">
       <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/mcp73831.lib</uri>
     </library>
-    <library logical="tps736">
-      <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/tps736.lib</uri>
+    <library logical="mcp9700t-e">
+      <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/mcp9700t-e.lib</uri>
     </library>
     <library logical="BH1603FVC">
       <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/BH1603FVC.lib</uri>
     </library>
+    <library logical="switchtactile">
+      <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/switchtactile.lib</uri>
+    </library>
     <library logical="rn2483">
       <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/rn2483.lib</uri>
     </library>
-    <library logical="mcp9700t-e">
-      <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/mcp9700t-e.lib</uri>
+    <library logical="fa_238">
+      <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/libraries/fa_238.lib</uri>
+    </library>
+    <library logical="lora_sensor-cache">
+      <uri>/home/kolijn/MyWork/Hobbbies and Projects/Electronics/LoRaSensor/pcb_layout/lora_sensor-cache.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/microcontroller/AN2_Ambient">
-      <node ref="U4" pin="4"/>
-      <node ref="U5" pin="1"/>
-      <node ref="C17" pin="1"/>
-      <node ref="R24" pin="1"/>
-    </net>
-    <net code="2" name="/microcontroller/AN1_LDR">
-      <node ref="U4" pin="3"/>
-      <node ref="R25" pin="2"/>
-      <node ref="R26" pin="1"/>
-    </net>
-    <net code="3" name="/microcontroller/AN0_Battery">
+    <net code="1" name="/microcontroller/AN0_Battery">
       <node ref="R23" pin="1"/>
-      <node ref="U4" pin="2"/>
       <node ref="Q2" pin="2"/>
+      <node ref="U4" pin="2"/>
     </net>
-    <net code="4" name="/microcontroller/RF_Reset">
-      <node ref="U4" pin="7"/>
-      <node ref="U1" pin="32"/>
-    </net>
-    <net code="5" name="/rf_section/RF_UART_RX">
-      <node ref="U1" pin="7"/>
-      <node ref="U4" pin="17"/>
-    </net>
-    <net code="6" name="/rf_section/RF_UART_TX">
-      <node ref="U4" pin="18"/>
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="7" name="/microcontroller/VB_Control">
-      <node ref="U4" pin="13"/>
-      <node ref="Q2" pin="1"/>
-    </net>
-    <net code="8" name="/microcontroller/Sensors_Enable">
+    <net code="2" name="/microcontroller/Sensors_Enable">
       <node ref="U4" pin="26"/>
       <node ref="Q3" pin="1"/>
     </net>
-    <net code="9" name="/microcontroller/AN3_Temperature">
-      <node ref="U4" pin="5"/>
+    <net code="3" name="/microcontroller/AN3_Temperature">
+      <node ref="U4" pin="4"/>
       <node ref="U6" pin="3"/>
     </net>
-    <net code="10" name="/microcontroller/V_USB">
+    <net code="4" name="/microcontroller/AN2_Ambient">
+      <node ref="R24" pin="1"/>
+      <node ref="C17" pin="1"/>
+      <node ref="U5" pin="1"/>
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="5" name="/microcontroller/AN1_LDR">
+      <node ref="U4" pin="3"/>
+      <node ref="R26" pin="1"/>
+      <node ref="R25" pin="2"/>
+    </net>
+    <net code="6" name="/rf_section/RF_UART_RX">
+      <node ref="U4" pin="17"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="7" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="8" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="9" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="10" name="/microcontroller/RF_Reset">
+      <node ref="U4" pin="7"/>
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="11" name="/rf_section/RF_UART_TX">
+      <node ref="U1" pin="6"/>
+      <node ref="U4" pin="18"/>
+    </net>
+    <net code="12" name="/microcontroller/VB_Control">
+      <node ref="Q2" pin="1"/>
+      <node ref="U4" pin="13"/>
+    </net>
+    <net code="13" name="/microcontroller/V_USB">
+      <node ref="J8" pin="1"/>
       <node ref="U2" pin="4"/>
       <node ref="Power_LED1" pin="2"/>
       <node ref="C5" pin="1"/>
       <node ref="P1" pin="1"/>
     </net>
-    <net code="11" name="+3V3">
+    <net code="14" name="+3V3">
+      <node ref="J5" pin="1"/>
       <node ref="RF_Current1" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="C9" pin="1"/>
-      <node ref="R12" pin="2"/>
-      <node ref="U3" pin="5"/>
       <node ref="MCU_Current1" pin="1"/>
       <node ref="R13" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U3" pin="5"/>
     </net>
-    <net code="12" name="/microcontroller/MCU_Power">
+    <net code="15" name="/microcontroller/MCU_Power">
       <node ref="C15" pin="1"/>
-      <node ref="R12" pin="1"/>
-      <node ref="R16" pin="1"/>
-      <node ref="U4" pin="20"/>
-      <node ref="U4" pin="14"/>
-      <node ref="C16" pin="1"/>
-      <node ref="Q3" pin="2"/>
-      <node ref="MCU_Current1" pin="2"/>
       <node ref="R14" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U4" pin="20"/>
       <node ref="C14" pin="1"/>
+      <node ref="J6" pin="1"/>
       <node ref="R17" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="R12" pin="1"/>
+      <node ref="MCU_Current1" pin="2"/>
     </net>
-    <net code="13" name="/power_section/RF_Power">
-      <node ref="R13" pin="1"/>
+    <net code="16" name="/power_section/RF_Power">
+      <node ref="J7" pin="1"/>
+      <node ref="U1" pin="34"/>
       <node ref="RF_Current1" pin="2"/>
-      <node ref="R5" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C3" pin="1"/>
       <node ref="R1" pin="1"/>
       <node ref="U1" pin="12"/>
-      <node ref="U1" pin="34"/>
-      <node ref="C1" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C2" pin="1"/>
+      <node ref="R5" pin="1"/>
     </net>
-    <net code="14" name="GND">
-      <node ref="U1" pin="33"/>
-      <node ref="U1" pin="24"/>
-      <node ref="P1" pin="5"/>
-      <node ref="C12" pin="2"/>
-      <node ref="PICKIT1" pin="3"/>
-      <node ref="U4" pin="8"/>
-      <node ref="P1" pin="4"/>
-      <node ref="C15" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="C14" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="U1" pin="26"/>
-      <node ref="U1" pin="27"/>
-      <node ref="U1" pin="47"/>
-      <node ref="U1" pin="28"/>
-      <node ref="RF_LED_1" pin="1"/>
-      <node ref="RF_LED_0" pin="1"/>
-      <node ref="R6" pin="2"/>
-      <node ref="R2" pin="2"/>
-      <node ref="U1" pin="20"/>
-      <node ref="U5" pin="2"/>
-      <node ref="U1" pin="11"/>
-      <node ref="U1" pin="21"/>
-      <node ref="U1" pin="41"/>
-      <node ref="U1" pin="22"/>
+    <net code="17" name="/power_section/V_Battery">
+      <node ref="J4" pin="1"/>
+      <node ref="R11" pin="2"/>
+      <node ref="Battery_Current1" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="18" name="GND">
+      <node ref="R26" pin="2"/>
+      <node ref="R23" pin="2"/>
       <node ref="U1" pin="1"/>
+      <node ref="U5" pin="2"/>
       <node ref="R24" pin="2"/>
       <node ref="C17" pin="2"/>
-      <node ref="U6" pin="2"/>
-      <node ref="R23" pin="2"/>
-      <node ref="U1" pin="8"/>
-      <node ref="R26" pin="2"/>
-      <node ref="BUTTON_1" pin="2"/>
-      <node ref="Y1" pin="3"/>
+      <node ref="U1" pin="33"/>
       <node ref="Y1" pin="2"/>
-      <node ref="BUTTON_2" pin="2"/>
-      <node ref="LED3" pin="1"/>
-      <node ref="LED2" pin="1"/>
-      <node ref="LED1" pin="1"/>
+      <node ref="Y1" pin="4"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U6" pin="2"/>
+      <node ref="U1" pin="24"/>
       <node ref="LED0" pin="1"/>
+      <node ref="LED1" pin="1"/>
+      <node ref="BUTTON_1" pin="2"/>
       <node ref="U4" pin="19"/>
-      <node ref="C11" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C13" pin="2"/>
+      <node ref="PICKIT1" pin="3"/>
       <node ref="UART2_CONN1" pin="3"/>
+      <node ref="LED2" pin="1"/>
+      <node ref="LED3" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="BUTTON_2" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="U1" pin="41"/>
+      <node ref="P1" pin="5"/>
+      <node ref="U1" pin="21"/>
+      <node ref="U1" pin="11"/>
+      <node ref="U1" pin="20"/>
+      <node ref="U4" pin="8"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U1" pin="22"/>
+      <node ref="P1" pin="4"/>
+      <node ref="C5" pin="2"/>
+      <node ref="RF_LOW_1" pin="2"/>
+      <node ref="Battery_Input1" pin="2"/>
       <node ref="C9" pin="2"/>
       <node ref="C8" pin="2"/>
       <node ref="C7" pin="2"/>
+      <node ref="C4" pin="2"/>
       <node ref="U3" pin="2"/>
       <node ref="R10" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="Battery_Input1" pin="2"/>
-      <node ref="RF_High1" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="RF_Low1" pin="2"/>
       <node ref="R9" pin="2"/>
+      <node ref="RF_LED_1" pin="1"/>
+      <node ref="J9" pin="1"/>
       <node ref="U2" pin="2"/>
-      <node ref="C3" pin="2"/>
+      <node ref="U1" pin="27"/>
+      <node ref="U1" pin="47"/>
+      <node ref="U1" pin="28"/>
+      <node ref="U1" pin="26"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C1" pin="2"/>
       <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="RF_HIGH_1" pin="2"/>
+      <node ref="RF_LED_0" pin="1"/>
       <node ref="C6" pin="2"/>
+      <node ref="R6" pin="2"/>
     </net>
-    <net code="15" name="/power_section/V_Battery">
-      <node ref="D1" pin="1"/>
-      <node ref="Battery_Current1" pin="1"/>
-      <node ref="Q1" pin="3"/>
-      <node ref="R11" pin="2"/>
-      <node ref="R22" pin="1"/>
-    </net>
-    <net code="16" name="Net-(U1-Pad9)">
+    <net code="19" name="Net-(U1-Pad9)">
       <node ref="U1" pin="9"/>
     </net>
-    <net code="17" name="Net-(U1-Pad5)">
+    <net code="20" name="Net-(U1-Pad5)">
       <node ref="U1" pin="5"/>
     </net>
-    <net code="18" name="Net-(U1-Pad4)">
+    <net code="21" name="Net-(U1-Pad4)">
       <node ref="U1" pin="4"/>
     </net>
-    <net code="19" name="Net-(U1-Pad3)">
+    <net code="22" name="Net-(U1-Pad3)">
       <node ref="U1" pin="3"/>
     </net>
-    <net code="20" name="Net-(U1-Pad2)">
+    <net code="23" name="Net-(U1-Pad2)">
       <node ref="U1" pin="2"/>
     </net>
-    <net code="21" name="Net-(U1-Pad10)">
+    <net code="24" name="Net-(U1-Pad10)">
       <node ref="U1" pin="10"/>
     </net>
-    <net code="22" name="Net-(U1-Pad30)">
+    <net code="25" name="Net-(U1-Pad30)">
       <node ref="U1" pin="30"/>
     </net>
-    <net code="23" name="Net-(U1-Pad40)">
+    <net code="26" name="Net-(U1-Pad40)">
       <node ref="U1" pin="40"/>
     </net>
-    <net code="24" name="Net-(U1-Pad31)">
+    <net code="27" name="Net-(U1-Pad31)">
       <node ref="U1" pin="31"/>
     </net>
-    <net code="25" name="Net-(U1-Pad42)">
+    <net code="28" name="Net-(U1-Pad42)">
       <node ref="U1" pin="42"/>
     </net>
-    <net code="26" name="Net-(U1-Pad13)">
+    <net code="29" name="Net-(U1-Pad13)">
       <node ref="U1" pin="13"/>
     </net>
-    <net code="27" name="Net-(RF_High1-Pad1)">
-      <node ref="RF_High1" pin="1"/>
+    <net code="30" name="Net-(RF_HIGH_1-Pad1)">
+      <node ref="RF_HIGH_1" pin="1"/>
       <node ref="U1" pin="23"/>
     </net>
-    <net code="28" name="Net-(RF_Low1-Pad1)">
-      <node ref="RF_Low1" pin="1"/>
+    <net code="31" name="Net-(RF_LOW_1-Pad1)">
       <node ref="U1" pin="25"/>
+      <node ref="RF_LOW_1" pin="1"/>
     </net>
-    <net code="29" name="Net-(U1-Pad43)">
+    <net code="32" name="Net-(U1-Pad43)">
       <node ref="U1" pin="43"/>
     </net>
-    <net code="30" name="Net-(U1-Pad14)">
+    <net code="33" name="Net-(U1-Pad14)">
       <node ref="U1" pin="14"/>
     </net>
-    <net code="31" name="Net-(U1-Pad44)">
+    <net code="34" name="Net-(U1-Pad44)">
       <node ref="U1" pin="44"/>
     </net>
-    <net code="32" name="Net-(U1-Pad15)">
+    <net code="35" name="Net-(U1-Pad15)">
       <node ref="U1" pin="15"/>
     </net>
-    <net code="33" name="Net-(U1-Pad45)">
+    <net code="36" name="Net-(U1-Pad45)">
       <node ref="U1" pin="45"/>
     </net>
-    <net code="34" name="Net-(U1-Pad16)">
+    <net code="37" name="Net-(U1-Pad16)">
       <node ref="U1" pin="16"/>
     </net>
-    <net code="35" name="Net-(U1-Pad46)">
+    <net code="38" name="Net-(U1-Pad46)">
       <node ref="U1" pin="46"/>
     </net>
-    <net code="36" name="Net-(U1-Pad17)">
+    <net code="39" name="Net-(U1-Pad17)">
       <node ref="U1" pin="17"/>
     </net>
-    <net code="37" name="Net-(U1-Pad18)">
+    <net code="40" name="Net-(U1-Pad18)">
       <node ref="U1" pin="18"/>
     </net>
-    <net code="38" name="Net-(U1-Pad19)">
+    <net code="41" name="Net-(U1-Pad19)">
       <node ref="U1" pin="19"/>
     </net>
-    <net code="39" name="Net-(U1-Pad29)">
+    <net code="42" name="Net-(U1-Pad29)">
       <node ref="U1" pin="29"/>
     </net>
-    <net code="40" name="Net-(U1-Pad39)">
+    <net code="43" name="Net-(U1-Pad39)">
       <node ref="U1" pin="39"/>
     </net>
-    <net code="41" name="/rf_section/RF_LED_1">
-      <node ref="U1" pin="36"/>
+    <net code="44" name="/rf_section/RF_LED_1">
       <node ref="R4" pin="1"/>
+      <node ref="U1" pin="36"/>
     </net>
-    <net code="42" name="Net-(R4-Pad2)">
+    <net code="45" name="Net-(R4-Pad2)">
       <node ref="R4" pin="2"/>
       <node ref="RF_LED_1" pin="2"/>
     </net>
-    <net code="43" name="/rf_section/RF_LED_0">
-      <node ref="R3" pin="1"/>
+    <net code="46" name="/rf_section/RF_LED_0">
       <node ref="U1" pin="35"/>
+      <node ref="R3" pin="1"/>
     </net>
-    <net code="44" name="Net-(R3-Pad2)">
-      <node ref="R3" pin="2"/>
+    <net code="47" name="Net-(R3-Pad2)">
       <node ref="RF_LED_0" pin="2"/>
+      <node ref="R3" pin="2"/>
     </net>
-    <net code="45" name="/rf_section/RF_Setting_1">
+    <net code="48" name="/rf_section/RF_Setting_1">
       <node ref="U1" pin="38"/>
       <node ref="R6" pin="1"/>
       <node ref="R5" pin="2"/>
     </net>
-    <net code="46" name="/rf_section/RF_Setting_0">
+    <net code="49" name="/rf_section/RF_Setting_0">
       <node ref="R2" pin="1"/>
-      <node ref="R1" pin="2"/>
       <node ref="U1" pin="37"/>
-    </net>
-    <net code="47" name="Net-(R7-Pad2)">
-      <node ref="U2" pin="1"/>
-      <node ref="R7" pin="2"/>
-    </net>
-    <net code="48" name="Net-(R10-Pad1)">
-      <node ref="U2" pin="5"/>
-      <node ref="R10" pin="1"/>
-    </net>
-    <net code="49" name="Net-(C6-Pad1)">
-      <node ref="C6" pin="1"/>
-      <node ref="U3" pin="4"/>
+      <node ref="R1" pin="2"/>
     </net>
     <net code="50" name="Net-(Battery_Current1-Pad2)">
       <node ref="U3" pin="3"/>
-      <node ref="R11" pin="1"/>
       <node ref="U3" pin="1"/>
+      <node ref="R11" pin="1"/>
       <node ref="Battery_Current1" pin="2"/>
     </net>
-    <net code="51" name="Net-(Power_LED1-Pad1)">
+    <net code="51" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="52" name="Net-(C6-Pad1)">
+      <node ref="U3" pin="4"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="53" name="Net-(Power_LED1-Pad1)">
       <node ref="R7" pin="1"/>
       <node ref="Power_LED1" pin="1"/>
     </net>
-    <net code="52" name="Net-(D1-Pad2)">
-      <node ref="Q1" pin="1"/>
-      <node ref="R9" pin="1"/>
-      <node ref="D1" pin="2"/>
+    <net code="54" name="Net-(R7-Pad2)">
+      <node ref="R7" pin="2"/>
+      <node ref="U2" pin="1"/>
     </net>
-    <net code="53" name="Net-(Charge_Current1-Pad1)">
-      <node ref="R8" pin="1"/>
+    <net code="55" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="56" name="Net-(Charge_Current1-Pad1)">
       <node ref="U2" pin="3"/>
       <node ref="Charge_Current1" pin="1"/>
+      <node ref="R8" pin="1"/>
     </net>
-    <net code="54" name="/power_section/Battery_input">
-      <node ref="R8" pin="2"/>
+    <net code="57" name="/power_section/Battery_input">
       <node ref="C4" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="Battery_Input1" pin="1"/>
       <node ref="Q1" pin="2"/>
       <node ref="Charge_Current1" pin="2"/>
-      <node ref="Battery_Input1" pin="1"/>
     </net>
-    <net code="55" name="Net-(LED1-Pad2)">
-      <node ref="R19" pin="2"/>
-      <node ref="LED1" pin="2"/>
-    </net>
-    <net code="56" name="Net-(LED3-Pad2)">
+    <net code="58" name="Net-(LED3-Pad2)">
       <node ref="R21" pin="2"/>
       <node ref="LED3" pin="2"/>
     </net>
-    <net code="57" name="Net-(LED2-Pad2)">
+    <net code="59" name="Net-(LED2-Pad2)">
       <node ref="R20" pin="2"/>
       <node ref="LED2" pin="2"/>
     </net>
-    <net code="58" name="Net-(LED0-Pad2)">
+    <net code="60" name="Net-(LED1-Pad2)">
+      <node ref="R19" pin="2"/>
+      <node ref="LED1" pin="2"/>
+    </net>
+    <net code="61" name="Net-(LED0-Pad2)">
       <node ref="LED0" pin="2"/>
       <node ref="R18" pin="2"/>
     </net>
-    <net code="59" name="Net-(R15-Pad1)">
+    <net code="62" name="Net-(R15-Pad1)">
       <node ref="U4" pin="1"/>
       <node ref="R15" pin="1"/>
     </net>
-    <net code="60" name="Net-(PICKIT1-Pad2)">
-      <node ref="PICKIT1" pin="2"/>
-    </net>
-    <net code="61" name="Net-(PICKIT1-Pad6)">
+    <net code="63" name="Net-(PICKIT1-Pad6)">
       <node ref="PICKIT1" pin="6"/>
     </net>
-    <net code="62" name="/microcontroller/VPP/~MCLR">
-      <node ref="PICKIT1" pin="1"/>
-      <node ref="R15" pin="2"/>
+    <net code="64" name="Net-(PICKIT1-Pad2)">
+      <node ref="PICKIT1" pin="2"/>
+    </net>
+    <net code="65" name="/microcontroller/VPP/~MCLR">
       <node ref="R14" pin="2"/>
       <node ref="C12" pin="1"/>
+      <node ref="PICKIT1" pin="1"/>
+      <node ref="R15" pin="2"/>
     </net>
-    <net code="63" name="/microcontroller/PGC">
-      <node ref="PICKIT1" pin="5"/>
-      <node ref="U4" pin="27"/>
+    <net code="66" name="/microcontroller/USB_D+">
+      <node ref="U4" pin="16"/>
+      <node ref="P1" pin="3"/>
     </net>
-    <net code="64" name="/microcontroller/USB_D-">
+    <net code="67" name="/microcontroller/OSC2">
+      <node ref="Y1" pin="3"/>
+      <node ref="C11" pin="1"/>
+      <node ref="U4" pin="10"/>
+    </net>
+    <net code="68" name="/microcontroller/OSC1">
+      <node ref="Y1" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U4" pin="9"/>
+    </net>
+    <net code="69" name="/microcontroller/USB_D-">
       <node ref="U4" pin="15"/>
       <node ref="P1" pin="2"/>
     </net>
-    <net code="65" name="/microcontroller/OSC2">
-      <node ref="C11" pin="1"/>
-      <node ref="U4" pin="10"/>
-      <node ref="Y1" pin="4"/>
+    <net code="70" name="/microcontroller/BUTTON_1">
+      <node ref="U4" pin="27"/>
+      <node ref="BUTTON_1" pin="1"/>
+      <node ref="PICKIT1" pin="5"/>
+      <node ref="R16" pin="2"/>
     </net>
-    <net code="66" name="/microcontroller/OSC1">
-      <node ref="U4" pin="9"/>
-      <node ref="Y1" pin="1"/>
-      <node ref="C10" pin="1"/>
-    </net>
-    <net code="67" name="/microcontroller/USB_D+">
-      <node ref="P1" pin="3"/>
-      <node ref="U4" pin="16"/>
-    </net>
-    <net code="68" name="/microcontroller/PGD">
+    <net code="71" name="/microcontroller/PGD">
       <node ref="U4" pin="28"/>
       <node ref="PICKIT1" pin="4"/>
     </net>
-    <net code="69" name="/microcontroller/LED2">
-      <node ref="U4" pin="24"/>
-      <node ref="R20" pin="1"/>
-    </net>
-    <net code="70" name="/microcontroller/LED3">
+    <net code="72" name="/microcontroller/LED3">
       <node ref="U4" pin="25"/>
       <node ref="R21" pin="1"/>
     </net>
-    <net code="71" name="/microcontroller/LED1">
+    <net code="73" name="/microcontroller/LED2">
+      <node ref="U4" pin="24"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="74" name="/microcontroller/LED1">
       <node ref="U4" pin="12"/>
       <node ref="R19" pin="1"/>
     </net>
-    <net code="72" name="/microcontroller/LED0">
+    <net code="75" name="/microcontroller/LED0">
       <node ref="U4" pin="11"/>
       <node ref="R18" pin="1"/>
     </net>
-    <net code="73" name="/microcontroller/UART_2_TX">
+    <net code="76" name="/microcontroller/BUTTON_0">
+      <node ref="U4" pin="21"/>
+      <node ref="BUTTON_2" pin="1"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="77" name="/microcontroller/UART_2_TX">
       <node ref="U4" pin="22"/>
       <node ref="UART2_CONN1" pin="2"/>
     </net>
-    <net code="74" name="/microcontroller/UART_2_RX">
+    <net code="78" name="/microcontroller/UART_2_RX">
       <node ref="UART2_CONN1" pin="1"/>
       <node ref="U4" pin="23"/>
     </net>
-    <net code="75" name="/microcontroller/V_CAP">
-      <node ref="U4" pin="6"/>
+    <net code="79" name="/microcontroller/V_CAP">
       <node ref="C13" pin="1"/>
+      <node ref="U4" pin="6"/>
     </net>
-    <net code="76" name="/microcontroller/BUTTON_1">
-      <node ref="BUTTON_1" pin="1"/>
-      <node ref="R16" pin="2"/>
-    </net>
-    <net code="77" name="/microcontroller/BUTTON_0">
-      <node ref="BUTTON_2" pin="1"/>
-      <node ref="R17" pin="2"/>
-      <node ref="U4" pin="21"/>
-    </net>
-    <net code="78" name="Net-(Q3-Pad3)">
-      <node ref="U5" pin="3"/>
-      <node ref="U5" pin="5"/>
+    <net code="80" name="Net-(Q3-Pad3)">
       <node ref="U5" pin="6"/>
+      <node ref="U5" pin="5"/>
+      <node ref="U5" pin="3"/>
       <node ref="Q3" pin="3"/>
       <node ref="U6" pin="4"/>
       <node ref="R25" pin="1"/>
     </net>
-    <net code="79" name="Net-(U5-Pad4)">
+    <net code="81" name="Net-(U5-Pad4)">
       <node ref="U5" pin="4"/>
     </net>
-    <net code="80" name="Net-(Q2-Pad3)">
-      <node ref="Q2" pin="3"/>
+    <net code="82" name="Net-(Q2-Pad3)">
       <node ref="R22" pin="2"/>
+      <node ref="Q2" pin="3"/>
     </net>
-    <net code="81" name="Net-(U6-Pad5)">
+    <net code="83" name="Net-(U6-Pad5)">
       <node ref="U6" pin="5"/>
     </net>
-    <net code="82" name="Net-(U6-Pad1)">
+    <net code="84" name="Net-(U6-Pad1)">
       <node ref="U6" pin="1"/>
     </net>
   </nets>

@@ -24,7 +24,8 @@ Thanks to [https://github.com/jpmeijers/RN2483shield](https://github.com/jpmeije
 ## Schematic and PCB layout
 The schematic and PCB layout were created using KiCad, and can be found in the **PCB Layout** folder. The gerber files and schematic PDF can also be found there.
 
-![Board Top layout](images/board_top_small.png)  ![Board Top layout](images/board_bottom_small.png)
+![Board Top layout](images/board_top_small.png)  
+![Board Top layout](images/board_bottom_small.png)
 
 ## Firmware
 

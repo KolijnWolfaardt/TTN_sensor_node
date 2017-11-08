@@ -10,7 +10,7 @@ The board is powered by a single LiPo battery, which is regulated down to 3.3v. 
 
 
 ## Datasheets
-* Microcontroller [PIC18F26J50](http://ww1.microchip.com/downloads/en/DeviceDoc/39632e.pdf)
+* Microcontroller [PIC18F26J50](http://ww1.microchip.com/downloads/en/DeviceDoc/39931d.pdf)
 * Lora Interface module [RN2483](http://ww1.microchip.com/downloads/en/DeviceDoc/50002346A.pdf)
 * Battery Management IC [MCP73831/2](http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf)
 * Low dropout Voltage Regulator [TPS736](http://www.ti.com/lit/ds/symlink/tps736.pdf)

@@ -51,7 +51,6 @@ void delayms(int num)
 
 void delay_ms_no_wait(int num)
 {
-    T0CONbits.TMR0ON = 0;
     timer_0_cycle_counter = num;
     timer0_counter = timer_0_reset;
     T0CONbits.TMR0ON = 1;

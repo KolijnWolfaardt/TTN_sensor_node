@@ -35,19 +35,19 @@ void add_buffer_to_usb(char buffer[], int length);
 
 typedef enum  
 {
-    STARTUP,
-    INIT_HARDWARE,
-    FIRST_RUN,
-    WAKE_UP_RADIO,
-    GET_MAC_STATUS,
-    JOIN_NETWORK,
-    SET_DR_VALUE,
-    SEND_VALUES,
-    SEND_VALUES_RESPONSE,
-    GOTO_SLEEP,
-    SLEEP,
-    HANDLE_ISSUE,
-    RESET_RADIO,
+    STARTUP=1,
+    INIT_HARDWARE=2,
+    FIRST_RUN=3,
+    WAKE_UP_RADIO=4,
+    GET_MAC_STATUS=5,
+    JOIN_NETWORK=6,
+    SET_DR_VALUE=7,
+    SEND_VALUES=8,
+    SEND_VALUES_RESPONSE=9,
+    GOTO_SLEEP=10,
+    SLEEP=0,
+    HANDLE_ISSUE=14,
+    RESET_RADIO=15,
 }states_t;
 
 states_t CURRENT_STATE = STARTUP;

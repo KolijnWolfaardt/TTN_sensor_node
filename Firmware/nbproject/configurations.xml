@@ -16,6 +16,7 @@
       <itemPath>inc/config_bits.h</itemPath>
       <itemPath>inc/rtc.h</itemPath>
       <itemPath>inc/timer.h</itemPath>
+      <itemPath>inc/analog.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -37,6 +38,7 @@
       <itemPath>src/uart.c</itemPath>
       <itemPath>src/rtc.c</itemPath>
       <itemPath>src/timer.c</itemPath>
+      <itemPath>src/analog.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

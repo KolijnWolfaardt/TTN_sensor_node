@@ -1,12 +1,8 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -21,13 +17,11 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
-LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:pic18f2xj50
 LIBS:mcp73831
 LIBS:switchtactile
@@ -887,4 +881,5 @@ F 3 "" H -50 200 60  0000 C CNN
 	1    1500 3550
 	1    0    0    -1  
 $EndComp
+Connection ~ 8200 4650
 $EndSCHEMATC
